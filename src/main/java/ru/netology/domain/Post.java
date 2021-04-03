@@ -5,6 +5,10 @@ public class Post {
     private int ownerId;
     private int authorId;
     private int createdBy;
+    private int replyOwnerId;
+    private int replyPostId;
+    private int signerId;
+    private int postponedId;
     private String date;
     private String text;
     private String postType;
@@ -20,6 +24,9 @@ public class Post {
     private RepostsInfo repostsInfo;
     private ViewsInfo viewsInfo;
     private Сopyright copyright;
+    private PostsSource postsSource;
+    private Geo geo;
+    private Donut donut;
 
     public int getId() {
         return id;
@@ -171,5 +178,61 @@ public class Post {
 
     public void setCopyright(Сopyright copyright) {
         this.copyright = copyright;
+    }
+
+    public int getReplyOwnerId() {
+        return replyOwnerId;
+    }
+
+    public void setReplyOwnerId(int replyOwnerId) {
+        this.replyOwnerId = replyOwnerId;
+    }
+
+    public int getReplyPostId() {
+        return replyPostId;
+    }
+
+    public void setReplyPostId(int replyPostId) {
+        this.replyPostId = replyPostId;
+    }
+
+    public int getSignerId() {
+        return signerId;
+    }
+
+    public void setSignerId(int signerId) {
+        this.signerId = signerId;
+    }
+
+    public int getPostponedId() {
+        return postponedId;
+    }
+
+    public void setPostponedId(int postponedId) {
+        this.postponedId = postponedId;
+    }
+
+    public PostsSource getPostsSource() {
+        return postsSource;
+    }
+
+    public void setPostsSource(PostsSource postsSource) {
+        this.postsSource = postsSource;
+    }
+
+    public Geo getGeo() {
+        return geo;
+    }
+
+    public void setGeo(Geo geo) {
+        this.geo = geo;
+    }
+
+    public Donut getDonut() {
+        return donut;
+    }
+
+    public void setDonut(Donut donut) {
+        this.donut = donut;
     }
 }
